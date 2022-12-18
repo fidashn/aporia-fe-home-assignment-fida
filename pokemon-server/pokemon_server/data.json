@@ -1,0 +1,38 @@
+[
+    {
+      "national_dex_number": 1,
+      "name": "Bulbasaur",
+      "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+      "description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+      "types": ["Grass", "Poison"],
+      "abilities": ["Overgrow", "Chlorophyll"],
+      "held_items": [
+        {
+          "name": "Miracle Seed",
+          "description": "An item to be held by a Pokémon. It raises the power of a Grass-type move one time."
+        },
+        {
+          "name": "Leaf Stone",
+          "description": "An item to be held by a Pokémon. It evolves certain species of Pokémon when used."
+        }
+      ]
+    },
+    {
+      "national_dex_number": 2,
+      "name": "Ivysaur",
+      "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+      "description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+      "types": ["Grass", "Poison"],
+      "abilities": ["Overgrow", "Chlorophyll"],
+      "held_items": [
+        {
+          "name": "Miracle Seed",
+          "description": "An item to be held by a Pokémon. It raises the power of a Grass-type move one time."
+        },
+        {
+          "name": "Leaf Stone",
+          "description": "An item to be held by a Pokémon. It evolves certain species of Pokémon when used."
+        }
+      ]
+    }
+]
