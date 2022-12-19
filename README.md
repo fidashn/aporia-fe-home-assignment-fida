@@ -1,8 +1,8 @@
 # Aporia Front-End Assignment Repository
 Welcome to the Aporia Front-End Assignment Repository. In this repository, you will find the necessary resources and instructions for completing the front-end home assignment.
 
-## Requirements
-The requirements for the home assignment will be provided to you separately in a full document. Please review this document carefully before starting the assignment.
+## Instructions
+The instructions for the home assignment are attached in this repo as a PDF file. Please review this document carefully before starting the assignment.
 
 ## Python API Server
 In the /pokemon-server directory, you will find a Python API server that you will use as part of your assignment. To run the server, navigate to the /pokemon-server directory and read the README.md file.
