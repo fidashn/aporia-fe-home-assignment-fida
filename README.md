@@ -1,5 +1,7 @@
 # Aporia Front-End Assignment Repository
-Welcome to the Aporia Front-End Assignment Repository. In this repository, you will find the necessary resources and instructions for completing the front-end home assignment.
+Welcome to the Aporia Front-End Assignment Repository 😊
+
+In this repository, you will find the necessary resources and instructions for completing the front-end home assignment.
 
 ## Instructions
 The instructions for the home assignment are attached in this repo as a PDF file. Please review this document carefully before starting the assignment.
