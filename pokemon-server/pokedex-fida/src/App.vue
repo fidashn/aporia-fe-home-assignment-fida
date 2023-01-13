@@ -13,9 +13,9 @@ import { RouterLink, RouterView } from "vue-router";
     />
 
     <div class="wrapper">
-     <nav>
+    <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/single-pokemon">Single Pokemon</RouterLink>
       </nav>
     </div>
   </header>
