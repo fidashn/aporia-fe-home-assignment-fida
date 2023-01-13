@@ -49,3 +49,4 @@ def get_pokemon(id: str):
 
 def run_local():
     uvicorn.run(app, host="0.0.0.0", port=3001)
+run_local()
