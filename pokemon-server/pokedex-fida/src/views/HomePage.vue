@@ -15,14 +15,15 @@ const input = ref('') ;
       <input type="text" placeholder="Type Pokemon Name..." class="input" id="userInput" v-model="input" @input="myVal">
       <fa-icon icon="search" class="search-icon" />
     </div>
-  </div>
-  <div class="drop-down"><div class="drop-down-menu"></div> <p :class="fontWeight">{{input}}</p>
+  
+  <div class="drop-down"><div class="drop-down-menu"></div> <p :class="fontWeight">{{input}}</p></div>
   <ul class="list">
         <li><input type="checkbox" /> Type1</li>
         <li><input type="checkbox" /> Type2</li>
         <li><input type="checkbox" /> Type3</li>
       </ul>
-    </div>
+    
+  </div>
  </div>
 </template>
 
