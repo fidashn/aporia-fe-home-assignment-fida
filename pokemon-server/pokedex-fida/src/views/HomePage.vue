@@ -16,7 +16,13 @@ const input = ref('') ;
       <fa-icon icon="search" class="search-icon" />
     </div>
   </div>
-  <div class="drop-down"><div class="drop-down-menu"></div> <p :class="fontWeight">{{input}}</p></div>
+  <div class="drop-down"><div class="drop-down-menu"></div> <p :class="fontWeight">{{input}}</p>
+  <ul class="list">
+        <li><input type="checkbox" /> Type1</li>
+        <li><input type="checkbox" /> Type2</li>
+        <li><input type="checkbox" /> Type3</li>
+      </ul>
+    </div>
  </div>
 </template>
 
@@ -37,6 +43,46 @@ const input = ref('') ;
 
 .textBold{
   font-weight: 800;
+}
+
+.list{
+  list-style:none;
+  margin-top: 20vh;
+}
+
+.search-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap:10px;
+  padding-top: 1vw;
+  /* border: 2px rgb(170, 126, 236) solid; */
+  border-radius: 15px;
+  height: 10vh;
+}
+
+.input{
+  width:20vw;
+  height: 5vh;
+  border: transparent;
+  border-bottom: 2px rgb(170, 126, 236) solid;
+  /* border-radius: 10px; */
+  position: relative;
+  bottom: 0;
+}
+.search-icon{
+ color: rgb(170, 126, 236);
+ height: 25px;
+}
+
+.drop-down-menu{
+  width: 18vw;
+  height: 20vh;
+  /* background-color: rgb(215, 250, 235); */
+  position: absolute;
+  border: 2px rgb(170, 126, 236) solid;
+  border-radius: 15px;
+  text-align: center;
 }
 
 </style>
