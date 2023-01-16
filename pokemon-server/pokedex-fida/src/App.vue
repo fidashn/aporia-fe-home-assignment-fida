@@ -1,19 +1,30 @@
-<script setup lang="ts">
+<script  lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 
-function currentDayAndTime() {
-  const current = new Date();
-  const dayOfTheWeek = `${current.toLocaleString('en-us', {weekday:'long'})}`
-  const exactTime = `${current.getHours()}:${current.getMinutes()}:${current.getSeconds()}`
-  return(dayOfTheWeek + ' '  + exactTime + ' ') ;
+
+
+
+export default {
+  computed: {
+    currentDayAndTime() {
+      const current = new Date();
+      const dayOfTheWeek = `${current.toLocaleString('en-us', {weekday:'long'})}`
+      const exactTime = `${current.getHours()}:${current.getMinutes()}:${current.getSeconds()}`
+      return(dayOfTheWeek + ' '  + exactTime + ' ') ;
+    }
+  },
 }
+fetch("http://127.0.0.1:3001/pokemons")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
 
 
 </script>
 
 <template>
-     
-    <div class="wrapper">
+    <div  class="wrapper">
       <nav>
      <img
        alt="pokedex-logo"
@@ -24,14 +35,17 @@ function currentDayAndTime() {
      />
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/single-pokemon">Single Pokemon</RouterLink>
-        {{ currentDayAndTime() }}
+        {{ currentDayAndTime }}
       </nav>
-    </div>
+      </div>
+    
  
   <RouterView />
 </template>
 
 <style scoped>
+
+
 .app-wrapper{
 display: flex;
 flex-direction: column;

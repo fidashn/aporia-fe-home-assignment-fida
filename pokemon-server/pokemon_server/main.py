@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, parse_obj_as
 import json
 import os
@@ -25,13 +26,23 @@ class Pokemon(BaseModel):
 
 
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 with open(json_path, 'r') as f:
     pokemons = parse_obj_as(list[Pokemon], json.load(f))
 
-
 @app.get("/")
 def ping():
-    return "OK"
+    return (
+      '200 OK',
+      "*"
+    )
 
 
 @app.get("/pokemons")

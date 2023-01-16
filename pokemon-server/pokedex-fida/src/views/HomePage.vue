@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import {ref} from 'vue';
 
+
 const input = ref('') ;
    function myVal (){
     console.log(input.value)
    }
  const fontWeight = ref('textBold')
+
+
 </script>
 
 <template>
+
  <div class="homePage-body">
   <div class="side-bar">
     <div class="search-wrapper">
@@ -24,14 +28,38 @@ const input = ref('') ;
       </ul>
     
   </div>
- </div>
+  <div class="card">
+        <div class="name">fff</div>          
+          <div class="image"> </div>   
+          <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, illum?</div>  
+        
+        <div class="types">
+          <ul>
+            <li><input type="checkbox" /> Type1</li>
+            <li><input type="checkbox" /> Type2</li>
+          </ul>
+      </div>         
+        
+       </div>
+    </div>
+ 
+
 </template>
 
 <style >
+
+.card{
+  border: 2px rgb(170, 126, 236) solid;
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+}
 .homePage-body{
+  display: flex;
   width: 80vw;
   height: 100vh;
-  border: 2px rgb(170, 126, 236) solid;
+  /* border: 2px rgb(170, 126, 236) solid; */
+  border: 2px red solid;
   border-radius: 15px;
   margin: 2vw 0 2vh 0;
 }
@@ -63,7 +91,7 @@ const input = ref('') ;
 }
 
 .input{
-  width:20vw;
+  width:15vw;
   height: 5vh;
   border: transparent;
   border-bottom: 2px rgb(170, 126, 236) solid;

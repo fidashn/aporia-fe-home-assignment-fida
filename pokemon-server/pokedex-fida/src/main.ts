@@ -9,12 +9,15 @@ import router from "./router";
 
 import "./assets/main.css";
 
+
+
 library.add(fas)
 
 const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
+
 
 app
 .component("fa-icon", FontAwesomeIcon)
