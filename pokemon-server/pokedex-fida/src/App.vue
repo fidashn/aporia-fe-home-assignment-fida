@@ -4,6 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 
 
+
 export default {
   computed: {
     currentDayAndTime() {
@@ -14,11 +15,8 @@ export default {
     }
   },
 }
-fetch("http://127.0.0.1:3001/pokemons")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
+
+
 
 
 </script>
